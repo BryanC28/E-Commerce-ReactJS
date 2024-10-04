@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Logo from "../../assets/images/shopee-logo.png";
+import Logo from "../../assets/images/logo.svg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faShoppingBag } from "@fortawesome/free-solid-svg-icons";

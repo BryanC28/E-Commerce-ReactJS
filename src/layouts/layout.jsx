@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/header/header";
 import Sidebar from "../components/sidebar/sidebar";
 import Navbar from "../components/navbar/navbar";
+import Footer from "../components/footer/footer";
 
 const Layouts = ({ children }) => {
   return (
@@ -12,6 +13,7 @@ const Layouts = ({ children }) => {
         <Sidebar />
         <div className="content">{children}</div>
       </div>
+      <Footer/>
     </>
   );
 };
