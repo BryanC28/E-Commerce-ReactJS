@@ -1,9 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import offer from "../../assets/images/offer.jpg";
 import logo from "../../assets/images/logo.svg";
 import method from "../../assets/images/methods.png";
-import ProductGrid from "../product/productGrid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -15,10 +13,6 @@ const Footer = () => {
   return (
     <div>
       <div className="container pb-16">
-        <Link to={"#"}>
-          <img src={offer} alt="footer" className="w-full" />
-        </Link>
-        <ProductGrid title={"recommend for you"} />
         <footer className="bg-white pt-16 pb-12 border-t border-gray-100">
           <div className="container grid grid-cols-3">
             <div className="col-span-1 space-y-8">

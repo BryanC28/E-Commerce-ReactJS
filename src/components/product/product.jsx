@@ -13,6 +13,7 @@ import product3 from "../../assets/images/product/product10.jpg";
 import product4 from "../../assets/images/product/product11.jpg";
 import ProductCard from "./productCard";
 import Sidebar from "./productSidebar";
+import Recommend from "../recommend/recommend";
 
 const Product = () => {
   return (
@@ -56,6 +57,7 @@ const Product = () => {
           </div>
         </div>
       </div>
+      <Recommend/>
     </>
   );
 };
