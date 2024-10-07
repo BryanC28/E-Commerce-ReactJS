@@ -5,6 +5,7 @@ import Home from "./components/home/home";
 import AboutUs from "./components/aboutus/aboutUs";
 import Contact from "./components/contact/contact";
 import Product from "./components/product/product";
+import ProductView from "./components/product/productView";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/aboutus" exact={true} element={<AboutUs />} />
           <Route path="/contact" exact={true} element={<Contact />} />
           <Route path="/products" exact={true} element={<Product />} />
+          <Route path="/product-detail" exact={true} element={<ProductView />} />
         </Routes>
       </Layouts>
     </>

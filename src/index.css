@@ -11,3 +11,12 @@
   text-decoration: none;
   list-style: none;
 }
+
+@layer components{
+  .size-selector input:checked + label{
+    @apply bg-red-500 text-white
+  }
+  .color-selector input:checked + label{
+    @apply ring-2 ring-red-500
+  }
+}

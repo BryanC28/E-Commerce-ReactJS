@@ -18,8 +18,11 @@ module.exports = {
   },
   variants:{
     extends:{
-      display:['group-hover']
+      display:['group-hover'],
+      visibility:['group-hover'],
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }
