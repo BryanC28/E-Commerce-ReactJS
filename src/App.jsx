@@ -6,20 +6,22 @@ import AboutUs from "./components/aboutus/aboutUs";
 import Contact from "./components/contact/contact";
 import Product from "./components/product/product";
 import ProductView from "./components/product/productView";
+import Login from "./components/login/login";
 
 function App() {
   return (
     <>
       {/* <Header /> */}
-      <Layouts>
-        <Routes>
-          <Route path="/" exact={true} element={<Home />} />
-          <Route path="/aboutus" exact={true} element={<AboutUs />} />
-          <Route path="/contact" exact={true} element={<Contact />} />
-          <Route path="/products" exact={true} element={<Product />} />
-          <Route path="/product-detail" exact={true} element={<ProductView />} />
-        </Routes>
-      </Layouts>
+      <Routes>
+        <Route path="/" element={<Layouts />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/products" element={<Product />} />
+          <Route path="/product-detail" element={<ProductView />} />
+        </Route>
+        <Route path="/login" element={<Login/>} />
+      </Routes>
     </>
   );
 }
