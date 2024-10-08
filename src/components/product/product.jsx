@@ -1,12 +1,9 @@
 import {
-  faChevronRight,
-  faHome,
   faTh,
   faThList,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Link } from "react-router-dom";
 import product1 from "../../assets/images/product/product9.jpg";
 import product2 from "../../assets/images/product/product12.jpg";
 import product3 from "../../assets/images/product/product10.jpg";
@@ -14,20 +11,12 @@ import product4 from "../../assets/images/product/product11.jpg";
 import ProductCard from "./productCard";
 import Sidebar from "./productSidebar";
 import Recommend from "../recommend/recommend";
+import { TitlePageItems } from "../items/items";
 
 const Product = () => {
   return (
     <>
-      <div className="container py-4 flex items-center gap-3">
-        <Link to={"/"} className="text-red-500 text-base">
-          <FontAwesomeIcon icon={faHome} />
-        </Link>
-        <FontAwesomeIcon
-          className="text-sm text-gray-400"
-          icon={faChevronRight}
-        />
-        <p className="text-medium text-gray-600 uppercase">Shop</p>
-      </div>
+      <TitlePageItems title={"shop"} />
       <div className="container grid grid-cols-4 gap-6 pt-4 pb-16 items-start">
         <Sidebar />
         <div className="col-span-3">
@@ -57,7 +46,7 @@ const Product = () => {
           </div>
         </div>
       </div>
-      <Recommend/>
+      <Recommend />
     </>
   );
 };

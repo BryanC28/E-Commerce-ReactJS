@@ -9,6 +9,8 @@ import ProductView from "./components/product/productView";
 import Login from "./components/login-register/login";
 import Register from "./components/login-register/register";
 import Account from "./components/account/account";
+import Checkout from "./components/checkout/checkout";
+import Wishlist from "./components/product/wishlist";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/products" element={<Product />} />
           <Route path="/product-detail" element={<ProductView />} />
           <Route path="/account" element={<Account />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/wishlist" element={<Wishlist />} />
         </Route>
         <Route path="/login" element={<Login/>} />
         <Route path="/register" element={<Register/>} />

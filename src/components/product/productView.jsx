@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import {
   faChevronRight,
   faHeart,
-  faHome,
   faShoppingBag,
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
@@ -22,25 +21,20 @@ import product2 from "../../assets/images/product/product12.jpg";
 import product3 from "../../assets/images/product/product10.jpg";
 import product4 from "../../assets/images/product/product11.jpg";
 import FilterTitle from "./filterTitle";
+import { TitlePageItems } from "../items/items";
 
 const ProductView = () => {
   return (
     <>
-      <div className="container py-4 flex items-center gap-3">
-        <Link to={"/"} className="text-red-500 text-base">
-          <FontAwesomeIcon icon={faHome} />
-        </Link>
-        <FontAwesomeIcon
-          className="text-sm text-gray-400"
-          icon={faChevronRight}
-        />
-        <p className="text-medium text-gray-600 uppercase">Shop</p>
-        <FontAwesomeIcon
-          className="text-sm text-gray-400"
-          icon={faChevronRight}
-        />
-        <p className="text-medium text-gray-600">ITALIAN L SHAPE SOFA </p>
-      </div>
+      <TitlePageItems title={"shop"}>
+        <div className="flex items-center space-x-2">
+          <FontAwesomeIcon
+            className="text-sm text-gray-400"
+            icon={faChevronRight}
+          />
+          <p className="text-medium text-gray-600">ITALIAN L SHAPE SOFA </p>
+        </div>
+      </TitlePageItems>
       <div className="container grid grid-cols-2 gap-6">
         {/* product image */}
         <div>
@@ -337,9 +331,7 @@ const ProductView = () => {
               <th className="py-2 px-4 border border-gray-300 w-40 font-medium">
                 Weight
               </th>
-              <th className="py-2 px-4 border border-gray-300">
-                60Kg
-              </th>
+              <th className="py-2 px-4 border border-gray-300">60Kg</th>
             </tr>
           </table>
         </div>
