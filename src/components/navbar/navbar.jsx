@@ -1,8 +1,13 @@
-import { faFacebook, faGithub, faInstagram, faLinkedinIn, faTiktok, faYoutube} from "@fortawesome/free-brands-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import bed from "../../assets/images/icon/bed.svg";
+import office from "../../assets/images/icon/office.svg";
+import sofa from "../../assets/images/icon/sofa.svg";
+import terrace from "../../assets/images/icon/terrace.svg";
+import outdoor from "../../assets/images/icon/outdoor-cafe.svg";
+import bed2 from "../../assets/images/icon/bed-2.svg";
 
 const Navbar = () => {
   return (
@@ -19,61 +24,43 @@ const Navbar = () => {
               to={"#"}
               className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
             >
-              <FontAwesomeIcon
-                icon={faFacebook}
-                className="text-blue-500 w-5 h-5 object-contain"
-              />
-              <span className="ml-6 text-gray-600 text-sm">FaceBook</span>
+              <img src={bed} alt="bed" className="w-5 h-5 object-contain" />
+              <span className="ml-6 text-gray-600 text-sm">Bed</span>
             </Link>
             <Link
               to={"#"}
               className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
             >
-              <FontAwesomeIcon
-                icon={faTiktok}
-                className="w-5 h-5 object-contain"
-              />
-              <span className="ml-6 text-gray-600 text-sm">Tiktok</span>
+              <img src={office} alt="bed" className="w-5 h-5 object-contain" />
+              <span className="ml-6 text-gray-600 text-sm">Office</span>
             </Link>
             <Link
               to={"#"}
               className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
             >
-              <FontAwesomeIcon
-                icon={faInstagram}
-                className="w-5 h-5 object-contain"
-              />
-              <span className="ml-6 text-gray-600 text-sm">Instagram</span>
+              <img src={sofa} alt="bed" className="w-5 h-5 object-contain" />
+              <span className="ml-6 text-gray-600 text-sm">Sofa</span>
             </Link>
             <Link
               to={"#"}
               className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
             >
-              <FontAwesomeIcon
-                icon={faLinkedinIn}
-                className="w-5 h-5 object-contain"
-              />
-              <span className="ml-6 text-gray-600 text-sm">Linkedin</span>
+              <img src={outdoor} alt="bed" className="w-5 h-5 object-contain" />
+              <span className="ml-6 text-gray-600 text-sm">Outdoor Cafe</span>
             </Link>
             <Link
               to={"#"}
               className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
             >
-              <FontAwesomeIcon
-                icon={faYoutube}
-                className="text-red-600 w-5 h-5 object-contain"
-              />
-              <span className="ml-6 text-gray-600 text-sm">Youtube</span>
+              <img src={bed2} alt="bed" className="w-5 h-5 object-contain" />
+              <span className="ml-6 text-gray-600 text-sm">Mattress</span>
             </Link>
             <Link
               to={"#"}
               className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
             >
-              <FontAwesomeIcon
-                icon={faGithub}
-                className="w-5 h-5 object-contain"
-              />
-              <span className="ml-6 text-gray-600 text-sm">Github</span>
+              <img src={terrace} alt="bed" className="w-5 h-5 object-contain" />
+              <span className="ml-6 text-gray-600 text-sm">Terrace</span>
             </Link>
           </div>
         </div>
@@ -108,7 +95,8 @@ const Navbar = () => {
             to={"/login"}
             className="text-gray-200 hover:text-white transition focus:text-red-500 active:bg-transparent"
           >
-            Login/Register
+            <FontAwesomeIcon icon={faRightToBracket} className="mr-2" />
+            Login
           </Link>
         </div>
       </div>

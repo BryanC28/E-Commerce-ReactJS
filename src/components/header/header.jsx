@@ -56,7 +56,7 @@ const Header = () => {
             </span>
           </Link>
           <Link
-            to={"#"}
+            to={"/account"}
             className="text-center text-gray-700 hover:text-red-500 transition relative"
           >
             <div className="text-2xl">

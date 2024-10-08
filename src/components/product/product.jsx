@@ -26,7 +26,7 @@ const Product = () => {
           className="text-sm text-gray-400"
           icon={faChevronRight}
         />
-        <p className="text-medium text-gray-600">Shop</p>
+        <p className="text-medium text-gray-600 uppercase">Shop</p>
       </div>
       <div className="container grid grid-cols-4 gap-6 pt-4 pb-16 items-start">
         <Sidebar />
