@@ -30,18 +30,18 @@ const AccSidebar = () => {
             to={"/account"}
           />
           <AccItems name={"profile information"} to={"/account/profile-info"} />
-          <AccItems name={"manage address"} />
-          <AccItems name={"change password"} />
+          <AccItems name={"manage address"} to={"/account/manager-address"} />
+          <AccItems name={"change password"} to={"/account/change-password"} />
         </div>
         <div className="space-y-1 pl-8">
-          <AccTitle title={"my order history"} icon={faGift} hover={"hover:text-red-500"} />
-          <AccItems name={"my returns"} />
-          <AccItems name={"my cancellations"} />
-          <AccItems name={"my reviews"} />
+          <AccTitle title={"my order history"} icon={faGift} hover={"hover:text-red-500"} to={"/account/my-order"} />
+          <AccItems name={"my returns"} to={"/account/return"}/>
+          <AccItems name={"my cancellations"}to={"/account/cancel"} />
+          <AccItems name={"my reviews"} to={"/account/reviews"}/>
         </div>
         <div className="space-y-1 pl-8">
-          <AccTitle title={"payment methods"} icon={faCreditCard} hover={"hover:text-red-500"} />
-          <AccItems name={"voucher"} />
+          <AccTitle title={"payment methods"} icon={faCreditCard} hover={"hover:text-red-500"} to={"/account/payment"} />
+          <AccItems name={"voucher"} to={"/account/voucher"}/>
         </div>
         <div className="space-y-1 pl-8">
           <AccTitle title={"my wishlist"} icon={faHeart} hover={"hover:text-red-500"} to={"/account/wishlist"} />

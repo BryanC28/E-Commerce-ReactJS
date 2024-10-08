@@ -1,7 +1,7 @@
 import { faBars, faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import bed from "../../assets/images/icon/bed.svg";
 import office from "../../assets/images/icon/office.svg";
 import sofa from "../../assets/images/icon/sofa.svg";
@@ -66,38 +66,38 @@ const Navbar = () => {
         </div>
         <div className="flex items-center justify-between flex-grow pl-12">
           <div className="flex items-center space-x-6 capitalize">
-            <Link
+            <NavLink
               to={"/"}
-              className="text-gray-200 hover:text-white transition focus:text-red-500 active:bg-transparent"
+              className={({ isActive }) => (isActive ? "active" : "no-active")}
             >
               Home
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to={"/products"}
-              className="text-gray-200 hover:text-white transition focus:text-red-500 active:bg-transparent"
+              className={({ isActive }) => (isActive ? "active" : "no-active")}
             >
-              Products
-            </Link>
-            <Link
+              Product
+            </NavLink>
+            <NavLink
               to={"/contact"}
-              className="text-gray-200 hover:text-white transition focus:text-red-500  active:bg-transparent"
+              className={({ isActive }) => (isActive ? "active" : "no-active")}
             >
-              Contact Us
-            </Link>
-            <Link
+              Contact
+            </NavLink>
+            <NavLink
               to={"/aboutus"}
-              className="text-gray-200 hover:text-white transition focus:text-red-500 active:bg-transparent"
+              className={({ isActive }) => (isActive ? "active" : "no-active")}
             >
-              About Us
-            </Link>
+              About us
+            </NavLink>
           </div>
-          <Link
+          <NavLink
             to={"/login"}
-            className="text-gray-200 hover:text-white transition focus:text-red-500 active:bg-transparent"
+            className={({ isActive }) => (isActive ? "active" : "no-active")}
           >
             <FontAwesomeIcon icon={faRightToBracket} className="mr-2" />
             Login
-          </Link>
+          </NavLink>
         </div>
       </div>
     </div>
