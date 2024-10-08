@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../header/header";
 import Footer from "../footer/footer";
 import { Link } from "react-router-dom";
+import { ButtonSubmit, FormInput } from "../items/items";
 
 const Register = () => {
   return (
@@ -15,42 +16,10 @@ const Register = () => {
           </p>
           <form action="">
             <div className="space-y-4">
-              <div>
-                <label className="text-gray-600 mb-2 block">Full Name <span className="text-red-500">*</span></label>
-                <input
-                  type="text"
-                  className="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-red-500 placeholder-gray-300"
-                  placeholder="Bryan"
-                />
-              </div>
-              <div>
-                <label className="text-gray-600 mb-2 block">
-                  Email Address <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="email"
-                  className="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-red-500 placeholder-gray-300"
-                  placeholder="example@gmail.com"
-                />
-              </div>
-              <div>
-                <label className="text-gray-600 mb-2 block">Password <span className="text-red-500">*</span></label>
-                <input
-                  type="password"
-                  className="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-red-500 placeholder-gray-300"
-                  placeholder="type password"
-                />
-              </div>
-              <div>
-                <label className="text-gray-600 mb-2 block">
-                  Confirm Password <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="password"
-                  className="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-red-500 placeholder-gray-300"
-                  placeholder="confirm your password"
-                />
-              </div>
+              <FormInput label={"full name"} type={"text"} placeholder={"John Ford"}/>
+              <FormInput label={"email address"} type={"email"} placeholder={"example@gmail.com"}/>
+              <FormInput label={"password"} type={"password"} placeholder={"type password"}/>
+              <FormInput label={"confirm password"} type={"password"} placeholder={"confirm your password"}/>
             </div>
             <div className="mt-6 space-x-2">
               <input
@@ -65,14 +34,7 @@ const Register = () => {
                 </Link>
               </label>
             </div>
-            <div className="mt-4">
-              <button
-                type="submit"
-                className="block uppercase w-full py-2 text-center text-white bg-red-500 border border-red-500 rounded hover:bg-transparent hover:text-red-500"
-              >
-                create an account
-              </button>
-            </div>
+           <ButtonSubmit buttonName={"create account"}/>
           </form>
           <div className="mt-6 flex justify-center relative">
             <div className="text-gray-600 uppercase px-3 bg-white z-10 relative">

@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../header/header";
 import Footer from "../footer/footer";
 import { Link } from "react-router-dom";
+import { ButtonSubmit, FormInput } from "../items/items";
 
 const Login = () => {
   return (
@@ -15,26 +16,8 @@ const Login = () => {
           </p>
           <form action="">
             <div className="space-y-4">
-              <div>
-                <label className="text-gray-600 mb-2 block">
-                  Email Address <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="email"
-                  className="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-red-500 placeholder-gray-300"
-                  placeholder="example@gmail.com"
-                />
-              </div>
-              <div>
-                <label className="text-gray-600 mb-2 block">
-                  Password <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="password"
-                  className="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-red-500 placeholder-gray-300"
-                  placeholder="type password"
-                />
-              </div>
+              <FormInput label={"Email address"} type={"email"} placeholder={"example@gmail.com"}/>
+              <FormInput label={"Password"} type={"password"} placeholder={"type password"}/>
             </div>
             <div className="flex items-center justify-between mt-6">
               <div className="flex items-center space-x-2">
@@ -54,14 +37,7 @@ const Login = () => {
                 forgot password?
               </Link>
             </div>
-            <div className="mt-4">
-              <button
-                type="submit"
-                className="uppercase block w-full py-2 text-center text-white rounded bg-red-500 border border-red-500 hover:bg-transparent hover:text-red-500 transition font-medium"
-              >
-                login
-              </button>
-            </div>
+            <ButtonSubmit buttonName={"login"}/>
           </form>
           <div className="mt-6 flex justify-center relative">
             <div className="text-gray-600 uppercase px-3 bg-white z-10 relative">
