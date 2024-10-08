@@ -37,7 +37,7 @@ const Login = () => {
                 forgot password?
               </Link>
             </div>
-            <ButtonSubmit buttonName={"login"}/>
+            <ButtonSubmit buttonName={"login"} size={"w-full"}/>
           </form>
           <div className="mt-6 flex justify-center relative">
             <div className="text-gray-600 uppercase px-3 bg-white z-10 relative">

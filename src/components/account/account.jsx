@@ -1,8 +1,8 @@
 import React from "react";
 
 import AccSidebar from "./accSidebar";
-import Profile from "./profile";
 import { TitlePageItems } from "../items/items";
+import { Outlet } from "react-router-dom";
 
 const Account = () => {
   return (
@@ -12,7 +12,7 @@ const Account = () => {
         {/* Account sidebar */}
         <AccSidebar />
         {/* Profile */}
-        <Profile />
+        <Outlet/>
       </div>
     </>
   );

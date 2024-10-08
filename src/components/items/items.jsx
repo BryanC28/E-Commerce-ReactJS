@@ -18,7 +18,7 @@ export const TitlePageItems = ({to,title,children}) => {
   );
 };
 
-export const FormInput = ({label,type,placeholder})=>{
+export const FormInput = ({label,type,placeholder,value})=>{
     return (
       <div>
         <label className="text-gray-600 mb-2 block capitalize">
@@ -26,19 +26,20 @@ export const FormInput = ({label,type,placeholder})=>{
         </label>
         <input
           type={type}
-          className="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-red-500 placeholder-gray-300"
+          className="input-box"
           placeholder={placeholder}
+          value={value}
         />
       </div>
     );
 };
 
-export const ButtonSubmit = ({buttonName}) => {
+export const ButtonSubmit = ({buttonName,size}) => {
     return (
       <div className="mt-4">
         <button
           type="submit"
-          className="uppercase block w-full py-2 text-center text-white rounded bg-red-500 border border-red-500 hover:bg-transparent hover:text-red-500 transition font-medium"
+          className={`uppercase block ${size} py-2 text-center text-white rounded bg-red-500 border border-red-500 hover:bg-transparent hover:text-red-500 transition font-medium`}
         >
           {buttonName}
         </button>

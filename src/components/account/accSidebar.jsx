@@ -28,7 +28,7 @@ const AccSidebar = () => {
             color={"text-red-500"}
             hover={"hover:text-gray-500"}
           />
-          <AccItems name={"profile information"} />
+          <AccItems name={"profile information"} to={"/account/profile-info"} />
           <AccItems name={"manage address"} />
           <AccItems name={"change password"} />
         </div>
@@ -43,7 +43,7 @@ const AccSidebar = () => {
           <AccItems name={"voucher"} />
         </div>
         <div className="space-y-1 pl-8">
-          <AccTitle title={"my wishlist"} icon={faHeart} hover={"hover:text-red-500"} to={"/wishlist"} />
+          <AccTitle title={"my wishlist"} icon={faHeart} hover={"hover:text-red-500"} to={"/account/wishlist"} />
         </div>
         <div className="space-y-1 pl-8">
           <AccTitle title={"logout"} icon={faRightToBracket} to={"/login"} hover={"hover:text-red-500"} />

@@ -32,7 +32,7 @@ const Header = () => {
         {/* Icon */}
         <div className="flex items-center space-x-4">
           <Link
-            to={"/wishlist"}
+            to={"/account/wishlist"}
             className="text-center text-gray-700 hover:text-red-500 transition relative"
           >
             <div className="text-2xl">

@@ -1,12 +1,9 @@
-import React from 'react'
-import { TitlePageItems } from '../items/items';
+import React from "react";
 
 const Wishlist = () => {
-  return (
-    <>
-      <TitlePageItems title={"wishlist"} />
-    </>
-  );
-}
+  return <div className="col-span-9">
+    
+  </div>;
+};
 
-export default Wishlist
+export default Wishlist;
