@@ -6,7 +6,7 @@ export const AccTitle = ({ title, icon, to, color, hover }) => {
   return (
     <Link
       to={to}
-      className={`relative capitalize text-xl ${color} block font-medium ${hover} transition`}
+      className={`relative capitalize text-xl ${color} focus:text-red-500 active:bg-transparent block font-medium ${hover} transition`}
     >
       <span className="absolute -left-8 top-0 text-base">
         <FontAwesomeIcon icon={icon} />
@@ -20,7 +20,7 @@ export const AccItems = ({ name, to }) => {
   return (
     <Link
       to={to}
-      className="relative capitalize text-gray-500 block hover:text-red-400 transition"
+      className="relative capitalize text-gray-500 block focus:text-red-500 active:bg-transparent hover:text-red-400 transition"
     >
       {name}
     </Link>

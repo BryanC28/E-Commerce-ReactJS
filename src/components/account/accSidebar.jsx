@@ -25,8 +25,9 @@ const AccSidebar = () => {
           <AccTitle
             title={"Manage account"}
             icon={faIdCard}
-            color={"text-red-500"}
-            hover={"hover:text-gray-500"}
+            color={"text-gray-600"}
+            hover={"hover:text-red-500"}
+            to={"/account"}
           />
           <AccItems name={"profile information"} to={"/account/profile-info"} />
           <AccItems name={"manage address"} />
