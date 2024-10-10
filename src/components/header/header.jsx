@@ -22,10 +22,10 @@ const Header = () => {
           </span>
           <input
             type="text"
-            className="border w-full border-red-500 border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none"
+            className="border w-full border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none"
             placeholder="Search....."
           />
-          <button className="bg-red-500 border border-red-500 text-white px-8 rounded-r-md hover:bg-transparent hover:text-red-500 transition ">
+          <button className="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition ">
             Search
           </button>
         </div>
@@ -33,31 +33,31 @@ const Header = () => {
         <div className="flex items-center space-x-4">
           <Link
             to={"/account/wishlist"}
-            className="text-center text-gray-700 hover:text-red-500 transition relative"
+            className="text-center text-gray-700 hover:text-primary transition relative"
           >
             <div className="text-2xl">
               <FontAwesomeIcon icon={faHeart} />
             </div>
             <div className="text-xs leading-3">Wish list</div>
-            <span className="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-red-500 text-white text-xs">
+            <span className="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">
               11
             </span>
           </Link>
           <Link
             to={"/checkout"}
-            className="text-center text-gray-700 hover:text-red-500 transition relative"
+            className="text-center text-gray-700 hover:text-primary transition relative"
           >
             <div className="text-2xl">
               <FontAwesomeIcon icon={faShoppingBag} />
             </div>
             <div className="text-xs leading-3">Cart</div>
-            <span className="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-red-500 text-white text-xs">
+            <span className="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">
               3
             </span>
           </Link>
           <Link
             to={"/account"}
-            className="text-center text-gray-700 hover:text-red-500 transition relative"
+            className="text-center text-gray-700 hover:text-primary transition relative"
           >
             <div className="text-2xl">
               <FontAwesomeIcon icon={faUser} />

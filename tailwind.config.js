@@ -14,7 +14,11 @@ module.exports = {
       center:true,
       padding: '1rem'
     },
-    extend: {},
+    extend: {
+      colors:{
+        'primary':'#FD3D57',
+      },
+    },
   },
   variants:{
     extends:{

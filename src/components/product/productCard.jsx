@@ -13,13 +13,13 @@ const ProductCard = ({srcImg}) => {
         <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 hover:opacity-100 transition cursor-pointer">
           <Link
             to={"#"}
-            className="text-white text-lg w-9 h-8 rounded-full bg-red-500 flex items-center justify-center hover:bg-gray-800 transition"
+            className="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
           >
             <FontAwesomeIcon icon={faSearch} />
           </Link>
           <Link
             to={"#"}
-            className="text-white text-lg w-9 h-8 rounded-full bg-red-500 flex items-center justify-center hover:bg-gray-800 transition"
+            className="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
           >
             <FontAwesomeIcon icon={faHeart} />
           </Link>
@@ -29,12 +29,12 @@ const ProductCard = ({srcImg}) => {
       {/* product content */}
       <div className="pt-4 pb-3 px-4">
         <Link to={"/product-detail"}>
-          <h4 className="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-red-500 transition">
+          <h4 className="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
             guyer chair
           </h4>
         </Link>
         <div className="flex items-baseline mb-1 space-x-2">
-          <p className="text-xl text-red-500">250.000</p>
+          <p className="text-xl text-primary">250.000</p>
           <p className="text-sm text-gray-400 line-through">400.000</p>
         </div>
         <div className="flex items-center">
@@ -51,7 +51,7 @@ const ProductCard = ({srcImg}) => {
       {/* product content */}
       <Link
         to={"/add-to-cart"}
-        className="block w-full py-1 text-center uppercase text-white bg-red-500 border border-red-500 rounded-b hover:bg-transparent hover:text-red-500 transition"
+        className="block w-full py-1 text-center uppercase text-white bg-primary border border-primary rounded-b hover:bg-transparent hover:text-primary transition"
       >
         Add to cart
       </Link>

@@ -22,14 +22,14 @@ const Wishlist = () => {
               Availability: <span className="text-green-600">In Strock</span>
             </p>
           </div>
-          <div className="text-red-500 text-lg font-semibold">750.000</div>
+          <div className="text-primary text-lg font-semibold">750.000</div>
           <Link
             to={"/add-to-cart"}
-            className="py-2 px-6 text-center text-sm uppercase text-white bg-red-500 border border-red-500 rounded hover:bg-transparent hover:text-red-500 transition"
+            className="py-2 px-6 text-center text-sm uppercase text-white bg-primary border border-primary rounded hover:bg-transparent hover:text-primary transition"
           >
             Add to cart
           </Link>
-          <div className="text-gray-600 cursor-pointer px-2 justify-center items-center hover:text-red-500 transition">
+          <div className="text-gray-600 cursor-pointer px-2 justify-center items-center hover:text-primary transition">
             <FontAwesomeIcon icon={faTrash} />
           </div>
         </div>
@@ -47,14 +47,14 @@ const Wishlist = () => {
               Availability: <span className="text-green-600">In Strock</span>
             </p>
           </div>
-          <div className="text-red-500 text-lg font-semibold">750.000</div>
+          <div className="text-primary text-lg font-semibold">750.000</div>
           <Link
             to={"/add-to-cart"}
-            className="py-2 px-6 text-center text-sm uppercase text-white bg-red-500 border border-red-500 rounded hover:bg-transparent hover:text-red-500 transition"
+            className="py-2 px-6 text-center text-sm uppercase text-white bg-primary border border-primary rounded hover:bg-transparent hover:text-primary transition"
           >
             Add to cart
           </Link>
-          <div className="text-gray-600 cursor-pointer px-2 justify-center items-center hover:text-red-500 transition">
+          <div className="text-gray-600 cursor-pointer px-2 justify-center items-center hover:text-primary transition">
             <FontAwesomeIcon icon={faTrash} />
           </div>
         </div>
@@ -72,14 +72,14 @@ const Wishlist = () => {
               Availability: <span className="text-green-600">In Strock</span>
             </p>
           </div>
-          <div className="text-red-500 text-lg font-semibold">750.000</div>
+          <div className="text-primary text-lg font-semibold">750.000</div>
           <Link
             to={"/add-to-cart"}
-            className="py-2 px-6 text-center text-sm uppercase text-white bg-red-500 border border-red-500 rounded hover:bg-transparent hover:text-red-500 transition"
+            className="py-2 px-6 text-center text-sm uppercase text-white bg-primary border border-primary rounded hover:bg-transparent hover:text-primary transition"
           >
             Add to cart
           </Link>
-          <div className="text-gray-600 cursor-pointer px-2 justify-center items-center hover:text-red-500 transition">
+          <div className="text-gray-600 cursor-pointer px-2 justify-center items-center hover:text-primary transition">
             <FontAwesomeIcon icon={faTrash} />
           </div>
         </div>
@@ -97,14 +97,14 @@ const Wishlist = () => {
               Availability: <span className="text-green-600">In Strock</span>
             </p>
           </div>
-          <div className="text-red-500 text-lg font-semibold">750.000</div>
+          <div className="text-primary text-lg font-semibold">750.000</div>
           <Link
             to={"/add-to-cart"}
-            className="py-2 px-6 text-center text-sm uppercase text-white bg-red-500 border border-red-500 rounded hover:bg-transparent hover:text-red-500 transition"
+            className="py-2 px-6 text-center text-sm uppercase text-white bg-primary border border-primary rounded hover:bg-transparent hover:text-primary transition"
           >
             Add to cart
           </Link>
-          <div className="text-gray-600 cursor-pointer px-2 justify-center items-center hover:text-red-500 transition">
+          <div className="text-gray-600 cursor-pointer px-2 justify-center items-center hover:text-primary transition">
             <FontAwesomeIcon icon={faTrash} />
           </div>
         </div>
@@ -122,14 +122,14 @@ const Wishlist = () => {
               Availability: <span className="text-green-600">In Strock</span>
             </p>
           </div>
-          <div className="text-red-500 text-lg font-semibold">750.000</div>
+          <div className="text-primary text-lg font-semibold">750.000</div>
           <Link
             to={"/add-to-cart"}
-            className="py-2 px-6 text-center text-sm uppercase text-white bg-red-500 border border-red-500 rounded hover:bg-transparent hover:text-red-500 transition"
+            className="py-2 px-6 text-center text-sm uppercase text-white bg-primary border border-primary rounded hover:bg-transparent hover:text-primary transition"
           >
             Add to cart
           </Link>
-          <div className="text-gray-600 cursor-pointer px-2 justify-center items-center hover:text-red-500 transition">
+          <div className="text-gray-600 cursor-pointer px-2 justify-center items-center hover:text-primary transition">
             <FontAwesomeIcon icon={faTrash} />
           </div>
         </div>

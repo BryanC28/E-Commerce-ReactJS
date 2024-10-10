@@ -25,11 +25,11 @@ const Register = () => {
               <input
                 type="checkbox"
                 id="agreement"
-                className="text-red-500 rounded-sm focus:ring-0 cursor-pointer"
+                className="text-primary rounded-sm focus:ring-0 cursor-pointer"
               />
               <label htmlFor="agreement" className="text-gray-600 font-serif">
                 I have read and agree to the{" "}
-                <Link to={"#"} className="text-red-500 font-serif">
+                <Link to={"#"} className="text-primary font-serif">
                   terms and conditions
                 </Link>
               </label>
@@ -58,7 +58,7 @@ const Register = () => {
           </div>
           <p className="mt-4 text-center">
             Already have an account?
-            <Link to={"/login"} className="text-red-500 ml-2">
+            <Link to={"/login"} className="text-primary ml-2">
               Login now
             </Link>
           </p>

@@ -27,13 +27,13 @@ const Sidebar = () => {
           <div className="mt-4 flex items-center">
             <input
               type="text"
-              className="w-full border-gray-300 focus:border-red-500 focus:ring-0 px-3 py-1 text-gray-600 text-sm rounded shadow-sm"
+              className="w-full border-gray-300 focus:border-primary focus:ring-0 px-3 py-1 text-gray-600 text-sm rounded shadow-sm"
               placeholder="min"
             />
             <span className="mx-3 text-gray-500 ">-</span>
             <input
               type="text"
-              className="w-full border-gray-300 focus:border-red-500 focus:ring-0 px-3 py-1 text-gray-600 text-sm rounded shadow-sm"
+              className="w-full border-gray-300 focus:border-primary focus:ring-0 px-3 py-1 text-gray-600 text-sm rounded shadow-sm"
               placeholder="max"
             />
           </div>
@@ -98,7 +98,7 @@ const Sidebar = () => {
               />
               <label
                 htmlFor="color-red"
-                className="border border-gray-200 rounded-sm h-6 w-6 cursor-pointer shadow-sm bg-red-500 block"
+                className="border border-gray-200 rounded-sm h-6 w-6 cursor-pointer shadow-sm bg-primary block"
               ></label>
             </div>
             <div className="color-selector">

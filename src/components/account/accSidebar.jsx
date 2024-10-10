@@ -26,7 +26,7 @@ const AccSidebar = () => {
             title={"Manage account"}
             icon={faIdCard}
             color={"text-gray-600"}
-            hover={"hover:text-red-500"}
+            hover={"hover:text-primary"}
             to={"/account"}
           />
           <AccItems name={"profile information"} to={"/account/profile-info"} />
@@ -34,20 +34,20 @@ const AccSidebar = () => {
           <AccItems name={"change password"} to={"/account/change-password"} />
         </div>
         <div className="space-y-1 pl-8">
-          <AccTitle title={"my order history"} icon={faGift} hover={"hover:text-red-500"} to={"/account/my-order"} />
+          <AccTitle title={"my order history"} icon={faGift} hover={"hover:text-primary"} to={"/account/my-order"} />
           <AccItems name={"my returns"} to={"/account/return"}/>
           <AccItems name={"my cancellations"}to={"/account/cancel"} />
           <AccItems name={"my reviews"} to={"/account/reviews"}/>
         </div>
         <div className="space-y-1 pl-8">
-          <AccTitle title={"payment methods"} icon={faCreditCard} hover={"hover:text-red-500"} to={"/account/payment"} />
+          <AccTitle title={"payment methods"} icon={faCreditCard} hover={"hover:text-primary"} to={"/account/payment"} />
           <AccItems name={"voucher"} to={"/account/voucher"}/>
         </div>
         <div className="space-y-1 pl-8">
-          <AccTitle title={"my wishlist"} icon={faHeart} hover={"hover:text-red-500"} to={"/account/wishlist"} />
+          <AccTitle title={"my wishlist"} icon={faHeart} hover={"hover:text-primary"} to={"/account/wishlist"} />
         </div>
         <div className="space-y-1 pl-8">
-          <AccTitle title={"logout"} icon={faRightToBracket} to={"/login"} hover={"hover:text-red-500"} />
+          <AccTitle title={"logout"} icon={faRightToBracket} to={"/login"} hover={"hover:text-primary"} />
         </div>
       </div>
     </div>

@@ -14,18 +14,21 @@
 
 @layer components{
   .size-selector input:checked + label{
-    @apply bg-red-500 text-white
+    @apply bg-primary text-white
   }
   .color-selector input:checked + label{
-    @apply ring-2 ring-red-500
+    @apply ring-2 ring-primary
   }
   .input-box{
-    @apply block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-red-500 placeholder-gray-300
+    @apply block w-full border border-gray-300 px-3 py-2 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-300
   }
   .no-active{
     @apply text-gray-200 hover:text-white transition
   }
   .active{
-    @apply text-red-500
+    @apply text-primary
+  }
+  .hvr{
+    @apply hover:text-primary
   }
 }

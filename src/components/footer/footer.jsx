@@ -9,179 +9,159 @@ import {
   faTiktok,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
     <div>
-      <div className="container pb-16">
-        <footer className="bg-white pt-16 pb-12 border-t border-gray-100">
-          <div className="container grid grid-cols-3">
-            <div className="col-span-1 space-y-8">
+      <footer className="py-16 border-t bg-gray-200 border-gray-100">
+        <div className="container grid grid-cols-3 gap-4">
+          <div className="row-span-3 space-y-4">
+            <div className="space-y-2">
               <img src={logo} alt="logo" className="w-30" />
               <p className="text-gray-500">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
                 cum odit rem voluptatum quis, fuga possimus consequuntur rerum
                 impedit veritatis?
               </p>
-              <div className="flex space-x-6">
-                <Link
-                  to={"#"}
-                  className="text-gray-400 text-xl hover:text-blue-600"
-                >
-                  <FontAwesomeIcon icon={faFacebook} />
-                </Link>
-                <Link
-                  to={"#"}
-                  className="text-gray-400 text-xl hover:text-rose-400"
-                >
-                  <FontAwesomeIcon icon={faInstagram} />
-                </Link>
-                <Link
-                  to={"#"}
-                  className="text-gray-400 text-xl hover:text-gray-950"
-                >
-                  <FontAwesomeIcon icon={faTiktok} />
-                </Link>
-                <Link
-                  to={"#"}
-                  className="text-gray-400 text-xl hover:text-red-600"
-                >
-                  <FontAwesomeIcon icon={faYoutube} />
-                </Link>
-              </div>
             </div>
-            <div className="col-span-2 grid grid-cols-2 gap-8">
-              <div className="grid grid-cols-2 gap-8">
-                <div>
-                  <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
-                    solutions
-                  </h3>
-                  <div className="mt-4 space-y-4">
-                    <Link
-                      to={"#"}
-                      className="text-base text-gray-500 hover:text-gray-900 block"
-                    >
-                      Marketing
-                    </Link>
-                    <Link
-                      to={"#"}
-                      className="text-base text-gray-500 hover:text-gray-900 block"
-                    >
-                      Analytics
-                    </Link>
-                    <Link
-                      to={"#"}
-                      className="text-base text-gray-500 hover:text-gray-900 block"
-                    >
-                      E-Commerce
-                    </Link>
-                    <Link
-                      to={"#"}
-                      className="text-base text-gray-500 hover:text-gray-900 block"
-                    >
-                      Insights
-                    </Link>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
-                    support
-                  </h3>
-                  <div className="mt-4 space-y-4">
-                    <Link
-                      to={"#"}
-                      className="text-base text-gray-500 hover:text-gray-900 block"
-                    >
-                      Pricicing
-                    </Link>
-                    <Link
-                      to={"#"}
-                      className="text-base text-gray-500 hover:text-gray-900 block"
-                    >
-                      Documentations
-                    </Link>
-                    <Link
-                      to={"#"}
-                      className="text-base text-gray-500 hover:text-gray-900 block"
-                    >
-                      Guides
-                    </Link>
-                    <Link
-                      to={"#"}
-                      className="text-base text-gray-500 hover:text-gray-900 block"
-                    >
-                      API Status
-                    </Link>
-                  </div>
+            <div className="w-full relative space-y-3">
+              <h4 className="uppercase">newsletter</h4>
+              <form className="flex">
+                <input
+                  type="text"
+                  className="border w-1/2 border-gray-500 border-r-0 py-1 pr-3 rounded-l-md focus:ring-0 focus:border-primary"
+                  placeholder="Your email address"
+                />
+                <button className="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-white hover:text-primary transition ">
+                  Subscibe
+                </button>
+              </form>
+            </div>
+          </div>
+          <div className="row-span-3 space-y-4">
+            <div className="grid grid-cols-2">
+              <div className="grid grid-cols-1">
+                <h3 className="text-m font-medium text-gray-900 uppercase tracking-wider">
+                  my account
+                </h3>
+                <div className="mt-4 space-y-5">
+                  <Link
+                    to={"#"}
+                    className="text-base text-gray-500 hvr block"
+                  >
+                    Order
+                  </Link>
+                  <Link
+                    to={"#"}
+                    className="text-base text-gray-500 hvr block"
+                  >
+                    Wishlist
+                  </Link>
+                  <Link
+                    to={"#"}
+                    className="text-base text-gray-500 hvr block"
+                  >
+                    Track Order
+                  </Link>
+                  <Link
+                    to={"#"}
+                    className="text-base text-gray-500 hvr block"
+                  >
+                    Manage Account
+                  </Link>
+                  <Link
+                    to={"#"}
+                    className="text-base text-gray-500 hvr block"
+                  >
+                    Return Order
+                  </Link>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-8">
-                <div>
-                  <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
-                    company
-                  </h3>
-                  <div className="mt-4 space-y-4">
-                    <Link
-                      to={"#"}
-                      className="text-base text-gray-500 hover:text-gray-900 block"
-                    >
-                      About Us
-                    </Link>
-                    <Link
-                      to={"#"}
-                      className="text-base text-gray-500 hover:text-gray-900 block"
-                    >
-                      Blog
-                    </Link>
-                    <Link
-                      to={"#"}
-                      className="text-base text-gray-500 hover:text-gray-900 block"
-                    >
-                      Job
-                    </Link>
-                    <Link
-                      to={"#"}
-                      className="text-base text-gray-500 hover:text-gray-900 block"
-                    >
-                      Press
-                    </Link>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
-                    legal
-                  </h3>
-                  <div className="mt-4 space-y-4">
-                    <Link
-                      to={"#"}
-                      className="text-base text-gray-500 hover:text-gray-900 block"
-                    >
-                      Claim
-                    </Link>
-                    <Link
-                      to={"#"}
-                      className="text-base text-gray-500 hover:text-gray-900 block"
-                    >
-                      Privacy
-                    </Link>
-                    <Link
-                      to={"#"}
-                      className="text-base text-gray-500 hover:text-gray-900 block"
-                    >
-                      Policy
-                    </Link>
-                    <Link
-                      to={"#"}
-                      className="text-base text-gray-500 hover:text-gray-900 block"
-                    >
-                      Terms
-                    </Link>
-                  </div>
+              <div className="grid grid-cols-1">
+                <h3 className="text-m font-medium text-gray-900 uppercase tracking-wider">
+                  information
+                </h3>
+                <div className="mt-4 space-y-5">
+                  <Link
+                    to={"#"}
+                    className="text-base text-gray-500 hvr block"
+                  >
+                    About Us
+                  </Link>
+                  <Link
+                    to={"#"}
+                    className="text-base text-gray-500 hvr block"
+                  >
+                    Return Policy
+                  </Link>
+                  <Link
+                    to={"#"}
+                    className="text-base text-gray-500 hvr block"
+                  >
+                    Terms & condition
+                  </Link>
+                  <Link
+                    to={"#"}
+                    className="text-base text-gray-500 hvr block"
+                  >
+                    Privacy Policy
+                  </Link>
+                  <Link
+                    to={"#"}
+                    className="text-base text-gray-500 hvr block"
+                  >
+                    FAQ
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
-        </footer>
-      </div>
+          <div className="row-span-3 space-y-4">
+            <h3 className="text-m font-medium text-gray-900 uppercase tracking-wider">
+              contact
+            </h3>
+            <div className="w-full relative space-y-3 text-gray-600">
+              <p>
+                <FontAwesomeIcon icon={faLocationDot} /> 7895 Dr New Albuquerue,
+                NM 19800, United States Of America
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faPhone} /> +566 477 256, +566 254 575
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faEnvelope} /> info@gmail.com
+              </p>
+            </div>
+            <div className="flex space-x-6">
+              <Link
+                to={"#"}
+                className="text-xl border rounded-full text-blue-600"
+              >
+                <FontAwesomeIcon icon={faFacebook} />
+              </Link>
+              <Link
+                to={"#"}
+                className="text-xl border rounded-full text-rose-400"
+              >
+                <FontAwesomeIcon icon={faInstagram} />
+              </Link>
+              <Link
+                to={"#"}
+                className="text-xl border rounded-full text-gray-950"
+              >
+                <FontAwesomeIcon icon={faTiktok} />
+              </Link>
+              <Link
+                to={"#"}
+                className="text-xl border rounded-full text-red-600"
+              >
+                <FontAwesomeIcon icon={faYoutube} />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </footer>
       <div className="bg-gray-800 py-4">
         <div className="container flex items-center justify-between">
           <p className="text-white">&#169; RAFCART - All Rights Reserved</p>

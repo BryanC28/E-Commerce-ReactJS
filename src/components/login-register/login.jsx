@@ -24,7 +24,7 @@ const Login = () => {
                 <input
                   type="checkbox"
                   id="agreement"
-                  className="text-red-500 focus:ring-0 rounded-sm cursor-pointer"
+                  className="text-primary focus:ring-0 rounded-sm cursor-pointer"
                 />
                 <label htmlFor="agreement" className="font-serif">
                   Remember me
@@ -32,7 +32,7 @@ const Login = () => {
               </div>
               <Link
                 to={"/send-mail"}
-                className="text-red-500 font-serif capitalize"
+                className="text-primary font-serif capitalize"
               >
                 forgot password?
               </Link>
@@ -61,7 +61,7 @@ const Login = () => {
           </div>
           <p className="mt-4 text-center">
             Don't have an account?
-            <Link to={"/register"} className="text-red-500 ml-2">
+            <Link to={"/register"} className="text-primary ml-2">
               Register now
             </Link>
           </p>

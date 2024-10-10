@@ -20,7 +20,7 @@ const ProfileInfo = () => {
           <FormInput label={"Birthday"} type={"date"} />
           <div>
             <label className="text-gray-600 mb-2 block capitalize">
-              Gender <span className="text-red-500">*</span>
+              Gender <span className="text-primary">*</span>
             </label>
             <select name="" id="" className="input-box">
               <option value="Male">Male</option>

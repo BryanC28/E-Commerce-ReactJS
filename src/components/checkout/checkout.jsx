@@ -81,18 +81,18 @@ const Checkout = () => {
               <input
                 type="checkbox"
                 id="agreement"
-                className="text-red-500 rounded-sm focus:ring-0 cursor-pointer"
+                className="text-primary rounded-sm focus:ring-0 cursor-pointer"
               />
               <label htmlFor="agreement" className="text-gray-600 font-serif">
                 Agree to our{" "}
-                <Link to={"#"} className="text-red-500 font-serif">
+                <Link to={"#"} className="text-primary font-serif">
                   terms and conditions
                 </Link>
               </label>
             </div>
             <Link
               to={"/payment"}
-              className="uppercase block w-full py-2 text-center text-white rounded bg-red-500 border border-red-500 hover:bg-transparent hover:text-red-500 transition font-medium"
+              className="uppercase block w-full py-2 text-center text-white rounded bg-primary border border-primary hover:bg-transparent hover:text-primary transition font-medium"
             >
               place order
             </Link>

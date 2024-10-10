@@ -43,7 +43,7 @@ const ProductView = () => {
             <img
               src={product1}
               alt="product"
-              className="w-full cursor-pointer border border-red-500"
+              className="w-full cursor-pointer border border-primary"
             />
             <img
               src={product2}
@@ -103,7 +103,7 @@ const ProductView = () => {
             </p>
           </div>
           <div className="flex items-baseline mb-1 space-x-2 mt-4">
-            <p className="text-3xl text-red-500">250.000 VND</p>
+            <p className="text-3xl text-primary">250.000 VND</p>
             <p className="text-xl text-gray-400 line-through">400.000 VND</p>
           </div>
           <p className="text-gray-600 pt-2">
@@ -197,7 +197,7 @@ const ProductView = () => {
                 />
                 <label
                   htmlFor="color-red"
-                  className="border border-gray-200 rounded-sm h-6 w-6 cursor-pointer shadow-sm bg-red-500 block"
+                  className="border border-gray-200 rounded-sm h-6 w-6 cursor-pointer shadow-sm bg-primary block"
                 ></label>
               </div>
               <div className="color-selector">
@@ -243,16 +243,16 @@ const ProductView = () => {
           <div className="flex gap-3 border-b border-gray-200 pb-5 mt-6">
             <Link
               to={"/add-to-cart"}
-              className="bg-red-500 border border-red-500 text-white px-8 py-2 font-medium 
-              rounded uppercase flex items-center gap-2 hover:bg-transparent hover:text-red-500 transition"
+              className="bg-primary border border-primary text-white px-8 py-2 font-medium 
+              rounded uppercase flex items-center gap-2 hover:bg-transparent hover:text-primary transition"
             >
               <FontAwesomeIcon icon={faShoppingBag} />
               Add to cart
             </Link>
             <Link
               to={"/add-to-cart"}
-              className="border border-red-500 text-red-500 px-8 py-2 font-medium 
-              rounded uppercase flex items-center gap-2 hover:bg-red-500 hover:text-white transition"
+              className="border border-primary text-primary px-8 py-2 font-medium 
+              rounded uppercase flex items-center gap-2 hover:bg-primary hover:text-white transition"
             >
               <FontAwesomeIcon icon={faHeart} />
               Wishlist

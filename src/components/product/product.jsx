@@ -21,16 +21,16 @@ const Product = () => {
         <Sidebar />
         <div className="col-span-3">
           <div className="flex items-center justify-center mb-4">
-            <select className="w-44 text-sm text-gray-600 px-4 py-3 border-gray-300 rounded shadow-sm focus:ring-red-500 focus:border-red-500">
+            <select className="w-44 text-sm text-gray-600 px-4 py-3 border-gray-300 rounded shadow-sm focus:ring-primary focus:border-primary">
               <option>Default sorting</option>
               <option>Price low to high</option>
               <option>Price high to low</option>
             </select>
             <div className="flex gap-2 ml-auto">
-              <div className="border border-red-500 w-10 h-9 flex justify-center items-center text-white bg-red-500 rounded cursor-pointer">
+              <div className="border border-primary w-10 h-9 flex justify-center items-center text-white bg-primary rounded cursor-pointer">
                 <FontAwesomeIcon icon={faTh} />
               </div>
-              <div className="border border-red-500 w-10 h-9 flex justify-center items-center text-gray-600 rounded cursor-pointer">
+              <div className="border border-primary w-10 h-9 flex justify-center items-center text-gray-600 rounded cursor-pointer">
                 <FontAwesomeIcon icon={faThList} />
               </div>
             </div>

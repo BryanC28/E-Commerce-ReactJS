@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const TitlePageItems = ({to,title,children}) => {
   return (
     <div className="container py-4 flex items-center gap-3">
-      <Link to={to} className="text-red-500 text-base">
+      <Link to={to} className="text-primary text-base">
         <FontAwesomeIcon icon={faHome} />
       </Link>
       <FontAwesomeIcon
@@ -22,7 +22,7 @@ export const FormInput = ({label,type,placeholder,value})=>{
     return (
       <div>
         <label className="text-gray-600 mb-2 block capitalize">
-          {label} <span className="text-red-500">*</span>
+          {label} <span className="text-primary">*</span>
         </label>
         <input
           type={type}
@@ -39,7 +39,7 @@ export const ButtonSubmit = ({buttonName,size}) => {
       <div className="mt-4">
         <button
           type="submit"
-          className={`uppercase block ${size} py-2 text-center text-white rounded bg-red-500 border border-red-500 hover:bg-transparent hover:text-red-500 transition font-medium`}
+          className={`uppercase block ${size} py-2 text-center text-white rounded bg-primary border border-primary hover:bg-transparent hover:text-primary transition font-medium`}
         >
           {buttonName}
         </button>

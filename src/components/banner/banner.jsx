@@ -21,8 +21,8 @@ const Banner = () => {
         <div className="mt-12">
           <Link
             to={"/products"}
-            className="bg-red-500 border border-red-500 text-white px-8 py-3 font-medium rounded-md
-                      hover:bg-transparent hover:text-red-500 transition"
+            className="bg-primary border border-primary text-white px-8 py-3 font-medium rounded-md
+                      hover:bg-transparent hover:text-primary transition"
           >Shop now</Link>
         </div>
       </div>

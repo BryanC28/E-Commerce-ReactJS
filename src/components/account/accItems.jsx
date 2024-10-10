@@ -9,7 +9,7 @@ export const AccTitle = ({ title, icon, to, color, hover }) => {
       // className={`relative capitalize text-xl ${color} block font-medium ${hover} transition`}
       className={({ isActive }) =>
         isActive
-          ? `relative capitalize text-xl text-red-500 block font-medium`
+          ? `relative capitalize text-xl text-primary block font-medium`
           : `relative capitalize text-xl ${color} block font-medium ${hover} transition`
       }
     >
@@ -27,7 +27,7 @@ export const AccItems = ({ name, to }) => {
       to={to}
       className={({ isActive }) =>
         isActive
-          ? "relative capitalize text-red-500 block hover:text-red-400 transition"
+          ? "relative capitalize text-primary block hover:text-red-400 transition"
           : "relative capitalize text-gray-500 block hover:text-red-400 transition"
       }
     >
@@ -43,7 +43,7 @@ export const ProfileCard = ({ title, to, name, infor, phone }) => {
         <h3 className="font-medium text-gray-800 text-lg capitalize">
           {title}
         </h3>
-        <Link to={to} className="text-red-500">
+        <Link to={to} className="text-primary">
           Edit
         </Link>
       </div>

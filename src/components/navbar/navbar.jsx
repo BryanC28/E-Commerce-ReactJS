@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div className="bg-gray-800">
       <div className="container flex">
-        <div className="px-8 py-4 bg-red-500 flex items-center cursor-pointer relative group">
+        <div className="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
           <span className="text-white">
             <FontAwesomeIcon icon={faBars} />
           </span>
