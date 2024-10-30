@@ -17,7 +17,7 @@ const Product = () => {
   return (
     <>
       <TitlePageItems title={"shop"} />
-      <div className="container grid grid-cols-4 gap-6 pt-4 pb-16 items-start">
+      <div className="container grid 2xl:grid-cols-4 gap-6 pt-4 pb-16 items-start">
         <Sidebar />
         <div className="col-span-3">
           <div className="flex items-center justify-center mb-4">
@@ -35,7 +35,7 @@ const Product = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid 2xl:grid-cols-3 gap-6">
             <ProductCard srcImg={product1} />
             <ProductCard srcImg={product2} />
             <ProductCard srcImg={product3} />

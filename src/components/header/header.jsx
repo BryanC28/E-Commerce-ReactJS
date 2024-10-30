@@ -9,11 +9,11 @@ import { faHeart, faUser } from "@fortawesome/free-regular-svg-icons";
 
 const Header = () => {
   return (
-    <header className="py-4 shadow-sm bg-white">
+    <header className="py-4 shadow-sm 2xl:bg-white">
       <div className="container flex items-center justify-between">
         {/* logo */}
-        <Link to={"/"} className="w-32">
-          <img src={Logo} alt="logo" />
+        <Link to={"/"}>
+          <img src={Logo} className="w-32" alt="logo" />
         </Link>
         {/* Search bar */}
         <div className="w-full max-w-xl flex relative">

@@ -49,7 +49,7 @@ const aboutUs = () => {
         </div>
       </div>
       <div className="container grid grid-cols-12 py-14 gap-4">
-        <div className="col-span-7 pr-3 space-y-3">
+        <div className="2xl:col-span-7 sm:col-span-12 pr-3 space-y-3">
           <h4 className="text-primary font-semibold uppercase">our history</h4>
           <h2 className="text-gray-800 text-2xl font-medium uppercase">
             creative and new fashion <br />
@@ -82,19 +82,19 @@ const aboutUs = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-5 pl-3">
+        <div className="2xl:col-span-5 sm:col-span-12 pl-3">
           <div className="block">
             <img src={aboutImg} alt="about" className="w-full" />
           </div>
         </div>
       </div>
       <div className="container grid grid-cols-12 pb-14 gap-4">
-        <div className="col-span-5 pr-3">
+        <div className="2xl:col-span-5 sm:col-span-12 pr-3">
           <div className="block">
             <img src={aboutImg2} alt="about" className="w-full" />
           </div>
         </div>
-        <div className="col-span-7 pl-3 space-y-3">
+        <div className="2xl:col-span-7 sm:col-span-12 pl-3 space-y-3">
           <h4 className="text-primary font-semibold uppercase">our vision</h4>
           <h2 className="text-gray-800 text-2xl font-medium uppercase">
             Our vision is simple - We exist to <br />
