@@ -16,8 +16,9 @@
 //   FaUsersCog,
 //   FaListAlt,
 // } from "react-icons/fa";
-import { faBars,faCalendarDay,faChartSimple, faGear, faList, faRightFromBracket, faRightToBracket, faUser } from "@fortawesome/free-solid-svg-icons";
-import { faFacebookMessenger, faGooglePlay} from "@fortawesome/free-brands-svg-icons"
+import { faBars,faBullseye,faCalendarDay,faChartSimple, faGear, faList, faRightFromBracket, faRightToBracket, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookMessenger} from "@fortawesome/free-brands-svg-icons"
+import { faCalendarAlt } from "@fortawesome/free-regular-svg-icons";
 
 import user01 from "../images/dashboard/user01.png";
 import user02 from "../images/dashboard/user02.png";
@@ -94,15 +95,15 @@ export const empolyeesData = [
 export const shortcutLink = [
   {
     title: "Goals",
-    icon: faGooglePlay,
+    icon: faBullseye,
   },
   {
     title: "Plan",
-    icon: faBars,
+    icon: faCalendarAlt,
   },
   {
     title: "Stats",
-    icon: faBars,
+    icon: faChartSimple,
   },
   {
     title: "Setting",
