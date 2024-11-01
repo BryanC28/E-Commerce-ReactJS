@@ -19,12 +19,17 @@ module.exports = {
 
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
+      '3xl': '2048px',
     },
     container:{
       center:true,
       padding: '1rem'
     },
     extend: {
+      fontFamily:{
+        roboto: ["Roboto", "serif"],
+        quickSan: ["Quicksand", "sans - serif"]
+      },
       colors:{
         'primary':'#FD3D57',
       },
@@ -39,4 +44,5 @@ module.exports = {
   plugins: [
     require('@tailwindcss/forms')
   ],
+  darkMode: "class"
 }

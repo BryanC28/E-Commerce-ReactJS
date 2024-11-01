@@ -46,5 +46,17 @@ export const ButtonSubmit = ({buttonName,size}) => {
       </div>
     );
 };
+export const ButtonCustom = ({buttonName,size,color,textHover}) => {
+    return (
+      <div className="mt-4">
+        <button
+          type="submit"
+          className={`uppercase block ${size} py-2 text-center text-white rounded bg-${color} border border-${color} hover:bg-transparent ${textHover} transition font-medium`}
+        >
+          {buttonName}
+        </button>
+      </div>
+    );
+};
 
 

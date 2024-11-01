@@ -10,6 +10,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  @apply transition-colors duration-200;
 }
 
 @layer components{

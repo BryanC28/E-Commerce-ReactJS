@@ -13,7 +13,8 @@ import Checkout from "./components/checkout/checkout";
 import Wishlist from "./components/product/wishlist";
 import Profile from "./components/account/profile";
 import ProfileInfo from "./components/account/profileInfo";
-import Reponsive from "./components/items/reponsive";
+import Dashboard from "./components/dashboard/dashboard";
+import DashLogin from "./components/dashboard/login/dashLogin";
 
 function App() {
   return (
@@ -35,7 +36,8 @@ function App() {
         </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/admin" element={<Reponsive />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/admin" element={<DashLogin />} />
       </Routes>
     </>
   );
