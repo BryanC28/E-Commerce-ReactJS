@@ -16,7 +16,7 @@
 //   FaUsersCog,
 //   FaListAlt,
 // } from "react-icons/fa";
-import { faBars,faBullseye,faCalendarDay,faChartSimple, faGear, faList, faRightFromBracket, faRightToBracket, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faBullseye,faCalendarDay,faChartSimple, faEyeSlash, faGear, faList, faRightFromBracket, faRightToBracket, faUser, faUserPlus } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookMessenger} from "@fortawesome/free-brands-svg-icons"
 import { faCalendarAlt } from "@fortawesome/free-regular-svg-icons";
 
@@ -74,19 +74,19 @@ export const links = [
 export const empolyeesData = [
   {
     title: "Total Empolyees",
-    icon: faBars,
+    icon: faUser,
     count: 200,
     bgColor: "bg-gray-100",
   },
   {
     title: "On Leave",
-    icon: faBars,
+    icon: faEyeSlash,
     count: 15,
     bgColor: "bg-blue-100",
   },
   {
     title: "New Joinee",
-    icon: faBars,
+    icon: faUserPlus,
     count: 25,
     bgColor: "bg-yellow-100",
   },

@@ -6,7 +6,7 @@ const Donutchart = ({darkMode}) => {
     options: {
       chart: {
         type: "donut",
-        height: 300,
+        height: 250,
       },
       labels: ["Desktop", "Tablet", "Mobile"],
       colors: ["#FF5733", "#33FF57", "#3357FF"],
