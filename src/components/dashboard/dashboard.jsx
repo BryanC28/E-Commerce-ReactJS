@@ -5,10 +5,12 @@ import Main from "./ui/Main";
 import Content from "./ui/Content";
 import DashboardProfile from "./profile/Profile";
 import Stats from "./stats/Stats";
+import Team from "./team/Team";
+import Events from "./events/Events";
 
 const Dashboard = () => {
   const [darkMode, setDarkMode] = useState(false);
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -28,7 +30,10 @@ const Dashboard = () => {
       <Main>
         <Content>
           <Stats darkMode={darkMode} />
-          <div className="flex flex-col gap-3 lg:flex-row"></div>
+          <div className="flex flex-col gap-3 lg:flex-row">
+            <Team/>
+            <Events/>
+          </div>
         </Content>
         <DashboardProfile />
       </Main>

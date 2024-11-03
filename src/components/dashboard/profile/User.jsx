@@ -1,5 +1,5 @@
 import React from 'react'
-import userAvt from '../../../assets/images/dashboard/user01.png'
+import userAvt from '../../../assets/images/dashboard/user03.png'
 
 const User = () => {
   return (
@@ -9,8 +9,8 @@ const User = () => {
     >
       <img src={userAvt} alt="user img" className="w-14 h-14 rounded-full" />
       <div>
-        <h3 className="font-semibold text-2xl ">John Doe</h3>
-        <p>Developer</p>
+        <h3 className="font-semibold text-2xl ">John Smith</h3>
+        <p>Backend Developer</p>
       </div>
     </div>
   );

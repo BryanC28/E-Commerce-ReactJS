@@ -18,7 +18,7 @@ const Header = ({ toggleDarkMode, darkMode, toggleSidebar }) => {
             >
               <FontAwesomeIcon icon={faBars} className="text-2xl" />
             </button>
-            <Link to={"#"}>
+            <Link to={"/dashboard"}>
               <FontAwesomeIcon
                 icon={faElementor}
                 className="h-6 mx-2 text-xl text-violet-500"
