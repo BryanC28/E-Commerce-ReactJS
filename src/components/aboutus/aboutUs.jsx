@@ -48,8 +48,8 @@ const aboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="container grid grid-cols-12 py-14 gap-4">
-        <div className="2xl:col-span-7 sm:col-span-12 pr-3 space-y-3">
+      <div className="container grid md:grid-cols-12 grid-cols-1 py-14 gap-4">
+        <div className="md:col-span-7 col-span-12 pr-3 space-y-3">
           <h4 className="text-primary font-semibold uppercase">our history</h4>
           <h2 className="text-gray-800 text-2xl font-medium uppercase">
             creative and new fashion <br />
@@ -82,19 +82,19 @@ const aboutUs = () => {
             </div>
           </div>
         </div>
-        <div className="2xl:col-span-5 sm:col-span-12 pl-3">
+        <div className="md:col-span-5 col-span-12 pl-3">
           <div className="block">
             <img src={aboutImg} alt="about" className="w-full" />
           </div>
         </div>
       </div>
-      <div className="container grid grid-cols-12 pb-14 gap-4">
-        <div className="2xl:col-span-5 sm:col-span-12 pr-3">
+      <div className="container grid md:grid-cols-12 grid-cols-1 pb-14 gap-4">
+        <div className="md:col-span-5 col-span-12 pr-3">
           <div className="block">
             <img src={aboutImg2} alt="about" className="w-full" />
           </div>
         </div>
-        <div className="2xl:col-span-7 sm:col-span-12 pl-3 space-y-3">
+        <div className="md:col-span-7 col-span-12 pl-3 space-y-3">
           <h4 className="text-primary font-semibold uppercase">our vision</h4>
           <h2 className="text-gray-800 text-2xl font-medium uppercase">
             Our vision is simple - We exist to <br />
@@ -150,7 +150,7 @@ const aboutUs = () => {
         <h3 className="text-center text-gray-800 uppercase font-medium text-3xl mb-6">
           meet with our team
         </h3>
-        <div className="grid grid-cols-12 gap-8">
+        <div className="grid md:grid-cols-12 md:gap-8 gap-4 grid-cols-6 ">
           <Team
             img={team1}
             to={"#"}

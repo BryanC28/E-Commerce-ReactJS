@@ -43,8 +43,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="container grid grid-cols-12 items-start gap-6 pt-4 pb-16">
-        <div className="col-span-8 border border-gray-200 shadow rounded px-6 pt-5 pb-7 space-y-5">
+      <div className="container grid md:grid-cols-12 grid-cols-1 items-start gap-6 pt-4 pb-16">
+        <div className="md:col-span-8 col-span-12 border border-gray-200 shadow rounded px-6 pt-5 pb-7 space-y-5">
           <h4 className="uppercase text-2xl font-semibold">
             leave us a message
           </h4>
@@ -66,7 +66,7 @@ const Contact = () => {
           <textarea className="input-box" id="text-message" rows="5"></textarea>
           <ButtonSubmit buttonName={"send message"} size={"w-1/4"} />
         </div>
-        <div className="col-span-4 border border-gray-200 shadow p-4 rounded space-y-6">
+        <div className="md:col-span-4 col-span-12 border border-gray-200 shadow p-4 rounded space-y-6">
           <div>
             <h4 className="text-gray-800 font-medium uppercase text-lg mb-4">
               our store
