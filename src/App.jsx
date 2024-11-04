@@ -36,7 +36,9 @@ function App() {
         </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard" element={<Dashboard />}>
+          {" "}
+        </Route>
         <Route path="/admin" element={<DashLogin />} />
       </Routes>
     </>

@@ -65,7 +65,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex items-center justify-between flex-grow pl-12">
-          <div className="flex items-center space-x-6 capitalize">
+          <div className="flex md:flex-row flex-col items-center space-x-6 capitalize">
             <NavLink
               to={"/"}
               className={({ isActive }) => (isActive ? "active" : "no-active")}

@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <div>
       <footer className="py-16 border-t bg-gray-200 border-gray-100">
-        <div className="container grid grid-cols-3 gap-4">
+        <div className="container grid md:grid-cols-3 grid-cols-1 gap-4">
           <div className="row-span-3 space-y-4">
             <div className="space-y-2">
               <img src={logo} alt="logo" className="w-30" />
@@ -162,7 +162,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className="bg-gray-800 py-4">
+      <div className="bg-gray-800 md:py-4 ">
         <div className="container flex items-center justify-between">
           <p className="text-white">&#169; RAFCART - All Rights Reserved</p>
           <p className="text-white">&#64; Remark by Nguyen Le Cuong</p>

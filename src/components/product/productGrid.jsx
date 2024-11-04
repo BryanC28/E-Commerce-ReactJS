@@ -11,7 +11,7 @@ const ProductGrid = ({title}) => {
       <h2 className="text-2xl font-medium text-gray-800 uppercase mb-6">
         {title}
       </h2>
-      <div className="grid grid-cols-4 gap-6">
+      <div className="grid md:grid-cols-4 grid-cols-2 gap-6">
         <ProductCard srcImg={product1}/>
         <ProductCard srcImg={product2}/>
         <ProductCard srcImg={product3}/>

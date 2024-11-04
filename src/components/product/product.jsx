@@ -19,7 +19,7 @@ const Product = () => {
       <TitlePageItems title={"shop"} />
       <div className="container grid 2xl:grid-cols-4 gap-6 pt-4 pb-16 items-start">
         <Sidebar />
-        <div className="col-span-3">
+        <div className="md:col-span-3">
           <div className="flex items-center justify-center mb-4">
             <select className="w-44 text-sm text-gray-600 px-4 py-3 border-gray-300 rounded shadow-sm focus:ring-primary focus:border-primary">
               <option>Default sorting</option>
@@ -35,7 +35,7 @@ const Product = () => {
               </div>
             </div>
           </div>
-          <div className="grid 2xl:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 grid-cols-1 md:gap-6 gap-1">
             <ProductCard srcImg={product1} />
             <ProductCard srcImg={product2} />
             <ProductCard srcImg={product3} />
