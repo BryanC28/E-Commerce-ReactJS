@@ -10,13 +10,13 @@ import { faHeart, faUser } from "@fortawesome/free-regular-svg-icons";
 const Header = () => {
   return (
     <header className="py-4 shadow-sm bg-white">
-      <div className="container flex flex-col md:flex-row items-center justify-between">
+      <div className="container flex flex-col md:flex-row sm:items-center items-start justify-between">
         {/* logo */}
         <Link to={"/"}>
-          <img src={Logo} className="w-32 " alt="logo" />
+          <img src={Logo} className="sm:w-32 w-40" alt="logo" />
         </Link>
         {/* Search bar */}
-        <div className="w-full max-w-xl flex relative">
+        <div className="hidden w-full max-w-xl sm:flex relative">
           <span className="absolute left-4 top-3 text-lg text-gray-400">
             <FontAwesomeIcon icon={faMagnifyingGlass} />
           </span>
@@ -30,7 +30,7 @@ const Header = () => {
           </button>
         </div>
         {/* Icon */}
-        <div className="flex items-center space-x-4 translate-x-0 md:translate-x-3">
+        <div className=" hidden sm:flex sm:items-center space-x-4 translate-x-0 md:translate-x-3">
           <Link
             to={"/account/wishlist"}
             className="text-center text-gray-700 hover:text-primary transition relative"
