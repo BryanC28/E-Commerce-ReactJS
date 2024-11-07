@@ -6,8 +6,8 @@ const Checkout = () => {
   return (
     <>
       <TitlePageItems title={"checkout"} />
-      <div className="container grid grid-cols-12 pb-16 pt-4 gap-4">
-        <div className="col-span-8 border border-gray-200 p-4 rounded">
+      <div className="container grid md:grid-cols-12 grid-cols-1 pb-16 pt-4 gap-4">
+        <div className="md:col-span-8 col-span-12 border border-gray-200 p-4 rounded">
           <h3 className="font-medium text-gray-600 capitalize">checkout</h3>
           <div className="space-y-4">
             <div className="grid grid-cols-2 gap-4">
@@ -47,7 +47,7 @@ const Checkout = () => {
             />
           </div>
         </div>
-        <div className="col-span-4 border border-gray-200 p-4 rounded h-max">
+        <div className="md:col-span-4 col-span-12 border border-gray-200 p-4 rounded h-max">
           <h4 className="text-gray-800 font-medium uppercase text-lg mb-4">
             order summary
           </h4>

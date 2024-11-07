@@ -3,7 +3,7 @@ import { ProfileCard } from "./accItems";
 
 const Profile = () => {
   return (
-    <div className="col-span-9 grid grid-cols-3 gap-4">
+    <div className="md:col-span-9 grid md:grid-cols-3 col-span-6 grid-cols-1 gap-4">
       <ProfileCard
         title={"personal profile"}
         name={"Russell"}

@@ -3,10 +3,10 @@ import { ButtonSubmit, FormInput } from "../items/items";
 
 const ProfileInfo = () => {
   return (
-    <div className="col-span-9 shadow rounded px-6 pt-5 pb-7">
+    <div className="md:col-span-9 col-span-6 shadow rounded px-6 pt-5 pb-7">
       <h4 className="font-medium capitalize">profile information</h4>
       <div className="space-y-4">
-        <div className="grid grid-cols-2 gap-4 py-3">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-4 py-3">
           <FormInput
             label={"first name"}
             type={"text"}
@@ -37,7 +37,7 @@ const ProfileInfo = () => {
             type={"tel"}
             value={"+84962435997"}
           />
-          <ButtonSubmit buttonName={"save change"} size={"w-1/2"} />
+          <ButtonSubmit buttonName={"save change"} size={"md:w-1/2 w-full"} />
         </div>
       </div>
     </div>

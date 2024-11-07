@@ -5,7 +5,7 @@ import {AccItems, AccTitle} from "./accItems";
 import { faGift, faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 const AccSidebar = () => {
   return (
-    <div className="col-span-3">
+    <div className="md:col-span-3 col-span-6">
       <div className="px-4 py-3 flex items-center shadow gap-4">
         <div className="flex-shrink-0">
           <img

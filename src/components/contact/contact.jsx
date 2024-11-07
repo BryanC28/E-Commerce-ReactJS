@@ -64,7 +64,7 @@ const Contact = () => {
             Your message<span className="text-primary">*</span>
           </label>
           <textarea className="input-box" id="text-message" rows="5"></textarea>
-          <ButtonSubmit buttonName={"send message"} size={"w-1/4"} />
+          <ButtonSubmit buttonName={"send message"} size={"md:w-1/4 w-full "}/>
         </div>
         <div className="md:col-span-4 col-span-12 border border-gray-200 shadow p-4 rounded space-y-6">
           <div>
