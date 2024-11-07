@@ -34,6 +34,20 @@ const Header = () => {
         <Link to={"/"}>
           <img src={Logo} className="md:w-32 w-40" alt="logo" />
         </Link>
+        {/* Search bar */}
+        <div className=" hidden w-full max-w-xl 2xl:flex relative">
+          <span className="absolute left-4 top-3 text-lg text-gray-400">
+            <FontAwesomeIcon icon={faMagnifyingGlass} />
+          </span>
+          <input
+            type="text"
+            className="border w-full border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none"
+            placeholder="Search....."
+          />
+          <button className="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition ">
+            Search
+          </button>
+        </div>
         {/* Navbar mobile */}
         <div className="md:hidden flex relative cursor-pointer">
           <FontAwesomeIcon
@@ -207,20 +221,6 @@ const Header = () => {
               </div>
             </div>
           )}
-        </div>
-        {/* Search bar */}
-        <div className="hidden w-full max-w-xl md:flex relative">
-          <span className="absolute left-4 top-3 text-lg text-gray-400">
-            <FontAwesomeIcon icon={faMagnifyingGlass} />
-          </span>
-          <input
-            type="text"
-            className="border w-full border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none"
-            placeholder="Search....."
-          />
-          <button className="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition ">
-            Search
-          </button>
         </div>
         {/* Icon */}
         <div className=" hidden md:flex md:items-center space-x-4 translate-x-0 md:translate-x-3">

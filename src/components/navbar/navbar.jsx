@@ -1,4 +1,4 @@
-import { faBars, faRightToBracket } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faMagnifyingGlass, faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
@@ -16,9 +16,9 @@ const Navbar = () => {
   // };
 
   return (
-    <div className="bg-gray-800">
-      <div className="container flex ">
-        <div className="md:px-8 md:py-4 hidden bg-primary md:flex items-center cursor-pointer relative group">
+    <div className="md:bg-gray-800 bg-white">
+      <div className="container md:flex hidden ">
+        <div className="px-8 py-4  bg-primary flex items-center cursor-pointer relative group">
           <FontAwesomeIcon icon={faBars} className="text-white" />
           <span className="text-white ml-2 capitalize">All Categories</span>
           <div className="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
@@ -66,8 +66,8 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-        <div className="hidden md:flex items-center justify-between flex-grow pl-12">
-          <div className="flex md:flex-row flex-col items-center space-x-6 capitalize">
+        <div className=" flex items-center justify-between flex-grow pl-12">
+          <div className="flex flex-row items-center space-x-6 capitalize">
             <NavLink
               to={"/"}
               className={({ isActive }) => (isActive ? "active" : "no-active")}
@@ -100,6 +100,21 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faRightToBracket} className="mr-2" />
             Login
           </NavLink>
+        </div>
+      </div>
+      <div className="container md:hidden">
+        <div className="w-full max-w-xl flex relative mb-3">
+          <span className="absolute left-4 top-3 text-lg text-gray-400">
+            <FontAwesomeIcon icon={faMagnifyingGlass} />
+          </span>
+          <input
+            type="text"
+            className="border w-full border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none"
+            placeholder="Search....."
+          />
+          <button className="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition ">
+            Search
+          </button>
         </div>
       </div>
     </div>
