@@ -28,28 +28,29 @@ const Header = () => {
     setchecked(!checked);
   };
   return (
-    <header className="py-4 shadow-sm bg-white">
+    <header className="py-4 shadow-sm md:bg-white bg-gray-300">
       <div className="container flex md:flex-row md:items-start items-center justify-between">
         {/* logo */}
         <Link to={"/"}>
           <img src={Logo} className="md:w-32 w-40" alt="logo" />
         </Link>
         {/* Search bar */}
-        <div className="w-auto md:w-full max-w-xl flex relative">
-          <span className="absolute left-4 top-3 text-lg text-gray-400">
-            <FontAwesomeIcon icon={faMagnifyingGlass} />
-          </span>
+        <div className="w-auto md:w-full md:max-w-xl flex relative pl-2">
+          <FontAwesomeIcon
+            className="absolute left-4 top-3 text-lg text-gray-400"
+            icon={faMagnifyingGlass}
+          />
           <input
             type="text"
-            className="border w-full border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none"
+            className="border md:w-full w-auto border-primary border-r-0 pl-12 md:py-3 py-1 md:pr-3 pr-1 rounded-l-md focus:outline-none"
             placeholder="Search....."
           />
-          <button className="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition ">
+          <button className="bg-primary border border-primary text-white md:px-8 px-2 rounded-r-md hover:bg-transparent hover:text-primary transition ">
             Search
           </button>
         </div>
         {/* Navbar mobile */}
-        <div className="md:hidden flex relative cursor-pointer">
+        <div className="md:hidden flex relative cursor-pointer pl-2">
           <FontAwesomeIcon
             className="text-primary text-3xl"
             icon={faBars}
