@@ -35,7 +35,7 @@ const ProductView = () => {
           <p className="text-medium text-gray-600">ITALIAN L SHAPE SOFA </p>
         </div>
       </TitlePageItems>
-      <div className="container grid grid-cols-2 gap-6">
+      <div className="container grid md:grid-cols-2 grid-cols-1 gap-6">
         {/* product image */}
         <div>
           <img src={promain} alt="product" className="w-full" />
@@ -240,7 +240,7 @@ const ProductView = () => {
             </div>
           </FilterTitle>
           {/* Cart Button */}
-          <div className="flex gap-3 border-b border-gray-200 pb-5 mt-6">
+          <div className="flex gap-3 md:border-b border-gray-200 pb-5 mt-6">
             <Link
               to={"/add-to-cart"}
               className="bg-primary border border-primary text-white px-8 py-2 font-medium 
@@ -259,7 +259,7 @@ const ProductView = () => {
             </Link>
           </div>
           {/* Cart Button */}
-          <div className="flex gap-3 mt-4">
+          <div className="md:flex gap-3 mt-4 hidden">
             <Link
               to={"#"}
               className="text-gray-400 text-xl hover:text-blue-600"
@@ -285,11 +285,11 @@ const ProductView = () => {
         </div>
         {/* product content */}
       </div>
-      <div className="container pb-16">
-        <h3 className="border-b border-gray-200 text-gray-800 pb-3 font-medium">
+      <div className="container md:pb-16 pb-2">
+        <h3 className="md:border-b border-gray-200 text-gray-800 md:pb-3 pb-0 font-medium">
           Product details
         </h3>
-        <div className="w-3/5 pt-6">
+        <div className="md:w-3/5 w-full pt-6">
           <div className="text-gray-600 space-y-3">
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.

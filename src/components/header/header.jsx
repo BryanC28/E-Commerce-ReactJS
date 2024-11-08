@@ -35,7 +35,7 @@ const Header = () => {
           <img src={Logo} className="md:w-32 w-40" alt="logo" />
         </Link>
         {/* Search bar */}
-        <div className=" hidden w-full max-w-xl 2xl:flex relative">
+        <div className="w-auto md:w-full max-w-xl flex relative">
           <span className="absolute left-4 top-3 text-lg text-gray-400">
             <FontAwesomeIcon icon={faMagnifyingGlass} />
           </span>
