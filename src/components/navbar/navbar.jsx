@@ -1,4 +1,4 @@
-import { faBars, faMagnifyingGlass, faRightToBracket } from "@fortawesome/free-solid-svg-icons";
+import { faBars,faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
@@ -100,21 +100,6 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faRightToBracket} className="mr-2" />
             Login
           </NavLink>
-        </div>
-      </div>
-      <div className="container md:hidden">
-        <div className="w-full max-w-xl flex relative mb-3">
-          <span className="absolute left-4 top-3 text-lg text-gray-400">
-            <FontAwesomeIcon icon={faMagnifyingGlass} />
-          </span>
-          <input
-            type="text"
-            className="border w-full border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none"
-            placeholder="Search....."
-          />
-          <button className="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition ">
-            Search
-          </button>
         </div>
       </div>
     </div>
